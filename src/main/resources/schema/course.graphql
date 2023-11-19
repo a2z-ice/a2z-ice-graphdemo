@@ -1,0 +1,10 @@
+scalar Url
+scalar Date
+scalar NonNegativeInt
+type Query {
+    allHellos: [Hello]
+    oneHello: Hello
+    books(author: String): [Book]
+    booksByRelease(releasedInput: ReleaseHistoryInput!): [Book]
+    mobileApps(mobileAppFilter: MobileAppFilter): [MobileApp]
+}
